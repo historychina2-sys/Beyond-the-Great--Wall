@@ -1,0 +1,244 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Занятия курса — За Великой стеной</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#f7f3ee;
+    --red:#9c2e2a;
+    --border:#d9d0c4;
+    --text:#2c2c2c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+header{
+    background:white;
+    border-bottom:1px solid var(--border);
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+}
+
+header p{
+    margin-top:10px;
+    color:#666;
+}
+
+.back{
+    display:inline-block;
+    margin-top:15px;
+    color:var(--red);
+    text-decoration:none;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:60px 25px;
+}
+
+.lessons-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.lesson-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid var(--border);
+    text-decoration:none;
+    color:inherit;
+    transition:.3s;
+}
+
+.lesson-card:hover{
+    transform:translateY(-8px);
+}
+
+.lesson-card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.lesson-card-content{
+    padding:20px;
+}
+
+.lesson-card-content h3{
+    font-size:18px;
+    line-height:1.4;
+}
+
+@media(max-width:1000px){
+    .lessons-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+    .lessons-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Занятия курса</h1>
+<p>За Великой стеной: Китай от древности до современности</p>
+<a href="index.html" class="back">← Вернуться на главную</a>
+</header>
+
+<div class="container">
+
+<div class="lessons-grid">
+
+<a href="lesson1.html" class="lesson-card">
+<img src="lesson1.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Поднебесная: рождение великой цивилизации</h3>
+</div>
+</a>
+
+<a href="lesson2.html" class="lesson-card">
+<img src="lesson2.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Тайна знаков: иероглифы и искусство каллиграфии</h3>
+</div>
+</a>
+
+<a href="lesson3.html" class="lesson-card">
+<img src="lesson3.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Первый император: Шихуанди и рождение единого государства</h3>
+</div>
+</a>
+
+<a href="lesson4.html" class="lesson-card">
+<img src="lesson4.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Империя ученых и чиновников: расцвет Китая</h3>
+</div>
+</a>
+
+<a href="lesson5.html" class="lesson-card">
+<img src="lesson5.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Китай и страны синосферы</h3>
+</div>
+</a>
+
+<a href="lesson6.html" class="lesson-card">
+<img src="lesson6.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Поднебесная и великая степь: как монголы захватили Китай</h3>
+</div>
+</a>
+
+<a href="lesson7.html" class="lesson-card">
+<img src="lesson7.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Дым над Китаем: опиумные войны и век упадка</h3>
+</div>
+</a>
+
+<a href="lesson8.html" class="lesson-card">
+<img src="lesson8.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Китай в эпоху потрясений (1912–1937 гг.)</h3>
+</div>
+</a>
+
+<a href="lesson9.html" class="lesson-card">
+<img src="lesson9.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Под красным знаменем: история строительства коммунизма в Китае</h3>
+</div>
+</a>
+
+<a href="lesson10.html" class="lesson-card">
+<img src="lesson10.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Поворот к будущему и реформы Дэна Сяопина</h3>
+</div>
+</a>
+
+<a href="lesson11.html" class="lesson-card">
+<img src="lesson11.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Городской Китай XXI века</h3>
+</div>
+</a>
+
+<a href="lesson12.html" class="lesson-card">
+<img src="lesson12.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Древнее и современное искусство Китая</h3>
+</div>
+</a>
+
+<a href="lesson13.html" class="lesson-card">
+<img src="lesson13.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Как путешествовать в Китае</h3>
+</div>
+</a>
+
+<a href="lesson14.html" class="lesson-card">
+<img src="lesson14.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Наука, прорывные достижения и проекты Китая</h3>
+</div>
+</a>
+
+<a href="lesson15.html" class="lesson-card">
+<img src="lesson15.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Как учиться, работать и вести бизнес в Китае</h3>
+</div>
+</a>
+
+<a href="lesson16.html" class="lesson-card">
+<img src="lesson16.jpg.jpg">
+<div class="lesson-card-content">
+<h3>Заключительное занятие. Китай древний и современный</h3>
+</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
+```
