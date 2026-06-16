@@ -57,9 +57,20 @@ header{
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
     font-family:'Cormorant Garamond',serif;
     font-size:32px;
     font-weight:700;
+}
+
+.logo img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    flex-shrink:0;
 }
 
 .logo small{
@@ -291,6 +302,20 @@ header{
         display:block;
     }
 
+    .logo{
+        font-size:24px;
+        gap:10px;
+    }
+
+    .logo img{
+        width:55px;
+        height:55px;
+    }
+
+    .logo small{
+        font-size:12px;
+    }
+
     .hero h1{
         font-size:42px;
     }
@@ -298,6 +323,7 @@ header{
     .lessons-preview{
         grid-template-columns:1fr;
     }
+
 
 }
 .image-modal{
@@ -407,8 +433,14 @@ header{
 <div class="nav">
 
 <div class="logo">
-За Великой стеной
-    <small>Китай от древности до современности</small>
+
+    <img src="logo.png" alt="Логотип">
+
+    <div>
+        За Великой стеной
+        <small>Китай от древности до современности</small>
+    </div>
+
 </div>
 
 <button class="menu-toggle">
